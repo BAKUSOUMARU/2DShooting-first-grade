@@ -68,4 +68,9 @@ public abstract class EnemyBese : MonoBehaviour, IDamage
         _enemyHp -= damage;
         OnGetDamage();
     }
+
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
 }
